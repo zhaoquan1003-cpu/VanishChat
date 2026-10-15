@@ -1,0 +1,23 @@
+{
+  "name": "vanishchat",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Token 制临时聊天 SaaS 系统 — 无账号、凭 Token 匹配、会话级临时存储、退出即销毁",
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "npm --workspace server run dev",
+    "dev:web": "npm --workspace web run dev",
+    "build:web": "npm --workspace web run build",
+    "start": "npm --workspace server run start",
+    "tunnel": "node scripts/tunnel.mjs",
+    "tunnel:check": "node scripts/tunnel.mjs --check",
+    "e2e": "node scripts/e2e.mjs",
+    "seed": "node scripts/seed-demo.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

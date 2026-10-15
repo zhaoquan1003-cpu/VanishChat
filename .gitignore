@@ -1,0 +1,15 @@
+node_modules/
+dist/
+storage/uploads/*
+storage/tmp/*
+!storage/uploads/.gitkeep
+!storage/tmp/.gitkeep
+.env
+*.log
+.DS_Store
+
+# 内网穿透客户端（二进制体积大，不入库；配置模板见 deploy/frpc/frpc.ini.example）
+deploy/frpc/
+
+# 本地 AI 助手工作记忆（含内部笔记与环境信息，不入库）
+.workbuddy/
